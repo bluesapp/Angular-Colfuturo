@@ -1,0 +1,188 @@
+<h5>Cartas de patrocinio</h5>
+<hr>
+<p>
+    Acá podrá generar sus cartas y certificados necesarios para cumplir con los tramites asociados a su proyecto. Para
+    generar el documento selecciones el idioma, elija el tipo de documento y finalice pulsando el link generar
+    documento.
+</p>
+<form action="">
+    <h6 class="text-danger">¿A quien va dirigida?</h6>
+
+    <div class="form-group">
+        <div class="form-check custom-radio">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="cualquiera"
+            (click)="mostrar()">
+            <label class="form-check-label" for="inlineRadio1">A quien pueda interesar</label>
+        </div>
+        <div class="form-check ">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="persona"
+            (click)="mostrare=true">
+            <label class="form-check-label" for="inlineRadio2">A esta persona...</label>
+        </div>
+    </div>
+    <br>
+
+    
+    <div *ngIf="mostrare">
+        <!-- Formulario Persona -->
+        <label>Titulo</label>
+        <div class="row">
+            <div class="col-4">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="senor" id="senor" value="senor">
+                    <label class="form-check-label" for="senor">señor</label>
+                </div>
+            </div>
+            <div class="col 4">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="senora" id="senora" value="senora">
+                    <label class="form-check-label" for="inlineRadio2">señora</label>
+                </div>
+            </div>
+            <div class="col 4">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="senores" id="senores" value="senores">
+                    <label class="form-check-label" for="inlineRadio3">Señores</label>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="col-6">
+                <div class="form-group">
+                    <label for="nombres">Nombres</label>
+                    <input type="text" class="form-control" id="nombres">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="form-group">
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" class="form-control" id="apellidos">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="cargo">Cargo</label>
+            <input type="text" class="form-control" id="cargo">
+        </div>
+        <h6 class="text-danger">¿A donde va dirigida?</h6>
+        <div class="form-group">
+            <label for="organizacion">Organización</label>
+            <input type="text" class="form-control" id="organizacion">
+        </div>
+        <div class="form-group">
+            <label for="direccion">Dirección</label>
+            <textarea type="text" row="3" class="form-control" id="direccion"> </textarea>
+        </div>
+        <div class="form-group">
+            <label for="detalles">Detalles (Apt,Ofi, Bloq, etc)</label>
+            <input type="text" class="form-control" id="detalles">
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="form-group">
+                    <label for="ciudad">Ciudad</label>
+                    <input type="text" class="form-control" id="ciudad">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-6">
+                    <label for="pais">País</label>
+                    <input type="text" class="form-control" id="pais">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h6 class="text-danger">¿En que idioma?</h6>
+
+
+    <div class="form-group">
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="espanol">
+            <label class="form-check-label" for="inlineRadio1">Español</label>
+        </div>
+        <div class="form-check ">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="ingles">
+            <label class="form-check-label" for="inlineRadio2">Inglés</label>
+        </div>
+        <div class="form-check ">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="frances">
+            <label class="form-check-label" for="inlineRadio2">Frances</label>
+        </div>
+        <div class="form-check ">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="italiano">
+            <label class="form-check-label" for="inlineRadio2">Italiano</label>
+        </div>
+        <div class="form-check ">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="aleman">
+            <label class="form-check-label" for="inlineRadio2">Alemán</label>
+        </div>
+    </div>
+
+    <h6 class="text-danger">¿Cual carta?</h6>
+
+
+
+
+    <div class="row">
+        <div class="col px-lg-5">
+            <table class="table-sm table-striped">
+                <tbody>
+                    <tr id="miTablaPersonalizada">
+                        <td>Universidades y otros</td>
+                        <td><a href="">Ver</a> </td>
+                        <td><a href="">Generar RTF</a> </td>
+                    </tr>
+                    <tr>
+                        <td>Universidades y otros (EUR)</td>
+                        <td><a href="">Ver</a> </td>
+                        <td><a href="">Generar RTF</a> </td>
+                    </tr>
+                    <tr>
+                        <td>Embajada con presupuesto</td>
+                        <td><a href="">Ver</a> </td>
+                        <td><a href="">Generar RTF</a> </td>
+                    </tr>
+                    <tr>
+                        <td>Embajadas y otros sin presupuesto</td>
+                        <td><a href="">Ver</a> </td>
+                        <td><a href="">Generar RTF</a> </td>
+                    </tr>
+                    <tr>
+                        <td>Certificación bancos</td>
+                        <td><a href="">Ver</a> </td>
+                        <td><a href="">Generar RTF</a> </td>
+                    </tr>
+                    <tr>
+                        <td>Universidades y otros (CAD)</td>
+                        <td><a href="">Ver</a> </td>
+                        <td><a href="">Generar RTF</a> </td>
+                    </tr>
+                    <tr>
+                        <td>Universidades y otros (BGP)</td>
+                        <td><a href="">Ver</a> </td>
+                        <td><a href="">Generar RTF</a> </td>
+                    </tr>
+                    <tr>
+                        <td>Universidades y otros (AUD)</td>
+                        <td><a href="">Ver</a> </td>
+                        <td><a href="">Generar RTF</a> </td>
+                    </tr>
+                    <tr>
+                        <td>Practica Profesional</td>
+                        <td><a href="">Ver</a> </td>
+                        <td><a href="">Generar RTF</a> </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+</form>
